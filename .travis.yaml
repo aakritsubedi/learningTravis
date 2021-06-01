@@ -1,1 +1,2 @@
-script: "echo \"Learning Travis\""
+script: 
+  - "echo \"Learning Travis\""
