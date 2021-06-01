@@ -1,8 +1,7 @@
-script: 
-  - "echo \"Learning Travis\""
+script:
+  - 'echo "Learning Travis"'
 
 notifications:
-  slack:
-    secure: IvNPKTk3aRqKHzTEBgrpEcSPjR+eHs8G5lIzN4vt46Iw7Wl9Q7fnCQLv5xot4jbFHu2rChgfXjsv03B8A7DIedgnxUOwU4FfAnk4quofsQgRpqyhKIFbwp6dWga6eqr9w3p0Cv2aUH9Pp6VmI9TbOf9ON1e7Ppfi90KETPg6QRpCtf2iBO1Yfdn1fSwWCoW1I1TLy/08hrREnazIXySO7t7jFLezFWUZmvVBAK7HPe+w2RK8QsrjeHJmYPW95nTkKe77tkyo6D+QaHCHB+iqp+As88tNcus72miWlNM2dB27lbl0Evhxjw10i80vAd8t5/A3oDOD4gn9cPYJCtz4lD0dqKm3fYMWEaDpIHknLa1itk/AerQ5o2fpPpMLurCMwykZM1GbRsUxs0rShm+kWeeGqFwqmL6/TNE7Tv9rmpIv3BXxSoC7cmHi3xcdMxYyKn0evwgox15GNLE9QbbjyJe+Jr+56RA+v6v/WVfTaJ0Z9vZnYNGgypY+AYjVimtMgt5i9eSwgsvhibG/2jM/7uB6zHDZsz61aZqmyXOgifUY7aJJ5SqHvO7PfQmBRSx1ap5oZF20OX/GnKXdMluIWESfjDyi04s2xACa+fVt8w/OYcTofuioQwFDJQwzM9cx6ZoDoT02QXGTKdDBnceKh+d768RoOqfg8uqaogtuRSE=
-    on_success: always
-    on_failure: always
+  slack: lftechnology:m9RISpAAi2bf8HAHEPfMv4Rh
+  on_success: always
+  on_failure: always
