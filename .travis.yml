@@ -3,5 +3,8 @@ script:
 
 notifications:
   slack: lftechnology:m9RISpAAi2bf8HAHEPfMv4Rh
+  email:
+    - aakritsubedi9@gmail.com
+    - aakritsubedi@lftechnology.com
   on_success: always
   on_failure: always
