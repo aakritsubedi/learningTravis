@@ -1,0 +1,36 @@
+.banner {
+  height: 500px;
+  /* background-color: aqua; */
+  background-image: url(../assets/travis.png);
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  color: #2e2e2e;
+  padding: 25px 0;
+}
+.banner h1 {
+  font-size: 40px;
+}
+.tagline {
+  font-size: 14px;
+}
+.questions {
+
+}
+.question {
+  font-size: 20px;
+  color: #88CC9B;
+  display: block;
+  margin-bottom: 10px;
+}
+.answer {
+  font-size: 14px;
+  color: rgb(48, 48, 48);
+}
+.questions ul li{
+  font-size: 14px;
+  color: rgb(48, 48, 48);
+}

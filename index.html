@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travis</title>
+
+    <!-- CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="banner">
+      <h1>Travis CI</h1>
+      <span class="tagline"
+        >Easily sync your projects with Travis CI and you’ll be testing your
+        code in minutes!</span
+      >
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3># Basics</h3>
+          <div class="questions">
+            <span class="question"> What Is Continuous Integration (CI)? </span>
+            <p class="answer">
+              Continuous Integration is the practice of merging in small code
+              changes frequently - rather than merging in a large change at the
+              end of a development cycle. The goal is to build healthier
+              software by developing and testing in smaller increments. This is
+              where Travis CI comes in.
+            </p>
+            <p class="answer">
+              As a continuous integration platform, Travis CI supports your
+              development process by automatically building and testing code
+              changes, providing immediate feedback on the success of the
+              change. Travis CI can also automate other parts of your
+              development process by managing deployments and notifications.
+            </p>
+          </div>
+          <div class="questions">
+            <span class="question">
+              CI Builds and Automation: Building, Testing, Deploying
+            </span>
+            <p class="answer">
+              When you run a build, Travis CI clones your GitHub repository into
+              a brand-new virtual environment, and carries out a series of tasks
+              to build and test your code. If one or more of those tasks fail,
+              the build is considered broken. If none of the tasks fail, the
+              build is considered passed and Travis CI can deploy your code to a
+              web server or application host.
+            </p>
+            <p class="answer">
+              CI builds can also automate other parts of your delivery workflow.
+              This means you can have jobs depend on each other with Build
+              Stages, set up notifications, prepare deployments after builds and
+              many other tasks.
+            </p>
+          </div>
+          <div class="questions">
+            <span class="question">Builds, Stages, Jobs and Phases</span>
+            <p class="answer">
+              In the Travis CI documentation, some common words have specific meanings:
+              <ul>
+                <li>
+                  <code>build</code> - a group of jobs that run in sequence. For example, a build might have two jobs, each of which tests a project with a different version of a programming language. A build finishes when all of its jobs are finished.</li>
+                <li>
+                  <code>stage</code> - a group of jobs that run in parallel as part of a sequential build process composed of multiple stages.</li>
+                <li>job - an automated process that clones your repository into a virtual environment and then carries out a series of phases such as compiling your code, running tests, etc. A job fails, if the return code of the script phase is non-zero.</li>
+                <li>
+                  <code>phase</code> - the sequential steps of a job. For example, the install phase, comes before the script phase, which comes before the optional deploy phase.
+                </li>
+              </ul>
+            </p>
+          </div>
+          <div class="questions">
+            <span class="question">Breaking the Build</span>
+            <p class="answer">
+              The build is considered broken, when one or more of its jobs complete with a state that is not passed:
+              <ul>
+                <li>
+                  <code>errored</code> - a command in the before_install, install, or before_script phase returned a non-zero exit code. The job stops immediately.
+                </li>
+                <li>
+                  <code>failed</code> - a command in the script phase returned a non-zero exit code. The job continues to run until it completes.
+                </li>
+                <li>
+                  <code>canceled</code> - a user cancels the job before it completes.
+                </li> 
+              </ul>
+            </p>
+          </div>
+          <div class="questions">
+            <span class="question">Infrastructure and Environment Notes</span>
+            <p class="answer">
+              Travis CI offers a few different infrastructure environments, so you can select the setup that suits your project best: 
+              <ul>
+                <li>
+                  <code>Ubuntu Linux</code> - these Linux Ubuntu environments run inside full virtual machines, provide plenty of computational resources, and support the use of sudo, setuid, and setgid.
+                </li>
+                <li>
+                  <code>macOS</code> - uses one of several versions of the macOS operating system. This environment is useful for building projects that require the macOS software, such as projects written in Swift. It is not a requirement to use the macOS environment, if you develop on a macOS machine. 
+                </li>
+                <li>
+                  <code>Windows</code> - currently Windows Server version 1803 is supported.
+                </li>
+              </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row my-3">
+        <div class="col-md-12">
+          <h3># Getting Started</h3>
+         <div class="questions">
+          <span class="question">Prerequisites</span>
+          <p class="answer">
+            To start using Travis CI, make sure you have:
+            <ul>
+              <li>A GitHub or Bitbucket or GitLab or ... account.</li>
+              <li>Owner permissions for a project hosted on GitHub or Bitbucket or GitLab ...</li>
+            </ul>
+          </p>
+         </div>
+         <div class="questions">
+           <span class="question">To get started with Travis CI using GitHub</span>
+           <ul>
+             <li>Go to Travis-ci.com and Sign up with GitHub.</li>
+             <li>Accept the Authorization of Travis CI. You’ll be redirected to GitHub.</li>
+             <li>Click on your profile picture in the top right of your Travis Dashboard, click Settings and then the green Activate button, and select the repositories you want to use with Travis CI.</li>
+           </ul>
+           <span class="question"># Github</span>
+           <ol>
+             <li>
+              Add a <code>.travis.yml</code> file to your repository to tell Travis CI what to do. 
+             </li>
+             <li>Add the .travis.yml file to git, commit and push to trigger a Travis CI build</li>
+             <li>Check the build status page to see if your build passes or fails according to the return status of the build command by visiting Travis CI and selecting your repository.</li>
+           </ol>
+           <b>Note: </b> Travis CI GitHub OAuth App access rights. <br /> 
+           Travis CI does not access all your repositories by default.
+         </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
